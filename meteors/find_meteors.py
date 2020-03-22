@@ -17,9 +17,9 @@ def calc_dist(lat1, lon1, lat2, lon2):
 def get_dist(meteor):
     return meteor.get('distance', math.inf)
 
-my_loc = (29.424122, -98.493628)
+my_loc = (45.4000703, -71.8897796)
 
-meteor_resp = requests.get('https://data.nasa.gov/resource/y77d-th95.json')
+meteor_resp = requests.get('https://data.nasa.gov/resource/gh4g-9sfh.json')
 meteor_data = meteor_resp.json()
 
 for meteor in meteor_data:
